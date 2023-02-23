@@ -1,0 +1,33 @@
+{
+  "name": "vite-template-solid",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/types": "^7.21.0",
+    "@types/babel__core": "^7.20.0",
+    "@types/babel__preset-env": "^7.9.2",
+    "@types/babel__standalone": "^7.1.4",
+    "babel-plugin-add-module-exports": "^1.0.4",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-plugin-transform-node-env-inline": "^0.4.3",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.1",
+    "vite-plugin-solid": "^2.5.0"
+  },
+  "dependencies": {
+    "@babel/preset-typescript": "^7.21.0",
+    "@babel/standalone": "^7.21.1",
+    "babel-preset-solid": "^1.6.10",
+    "solid-js": "^1.6.10",
+    "solid-playground-editor-cm": "^0.2.0"
+  }
+}
