@@ -28,7 +28,6 @@ render(() => <h1>hello</h1>, output)`,
 
     const func = new Function(code);
     func();
-    originalLog(JSON.stringify(logger.logs));
   }
 
   createEffect(() => {
