@@ -13,13 +13,14 @@ const App: Component = () => {
   const [fileName, setFileName] = createSignal("index.tsx");
   const [files, setFiles] = createStore({
     "index.tsx": `import {render} from 'solid-js/web'
-import App from 'App.tsx
+import App from 'App.tsx'
+
 const output = document.querySelector('.output')
 
-render(() => <h1>hello</h1>, output)`,
+render(() => <App/>, output)`,
     "App.tsx": `export default function App() {
-  return <h1>hello</h1>
-  }`,
+  return <h1>hello world from solid playground CM</h1>
+}`,
   });
   const logger = new Logger();
   const [logs, setLogs] = createSignal<Logger["logs"]>([]);
