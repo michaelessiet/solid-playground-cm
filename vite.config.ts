@@ -1,8 +1,9 @@
 import { defineConfig } from "vite";
 import solidPlugin from "vite-plugin-solid";
+import nodePolyfills from 'vite-plugin-node-polyfills'
 
 export default defineConfig((env) => ({
-  plugins: [solidPlugin()],
+  plugins: [solidPlugin(),nodePolyfills.nodePolyfills()],
   define: {
     "process.env.BABEL_TYPES_8_BREAKING": "true",
     "process.env.NODE_DEBUG": "false",

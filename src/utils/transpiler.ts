@@ -6,9 +6,10 @@ import babelPresetSolid from "babel-preset-solid";
 export function transpile(code: string, filename: string) {
   return transform(code, {
     presets: [
+      "env",
+      babelPresetSolid,
       ["es2015", { modules: 'commonjs' }],
       ["typescript", { onlyRemoveTypeImports: true }],
-      [babelPresetSolid, { generate: "dom", hydratable: false }],
     ],
     filename: filename,
   }).code;
