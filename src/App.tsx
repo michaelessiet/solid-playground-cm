@@ -13,7 +13,7 @@ const App: Component = () => {
   const [fileName, setFileName] = createSignal("index.tsx");
   const [files, setFiles] = createStore({
     "index.tsx": `import {render} from 'solid-js/web'
-import App from 'App.tsx
+import App from 'App.tsx'
 const output = document.querySelector('.output')
 
 render(() => <h1>hello</h1>, output)`,
