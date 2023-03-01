@@ -16,7 +16,7 @@ const App: Component = () => {
 import App from 'App.tsx'
 const output = document.querySelector('.output')
 
-render(() => <h1>hello</h1>, output)`,
+render(() => <App/>, output)`,
     "App.tsx": `export default function App() {
   return <h1>hello</h1>
   }`,
